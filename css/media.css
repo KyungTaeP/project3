@@ -1,0 +1,343 @@
+/* header start */
+.hd {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: 0.3s;
+}
+
+.hd > h1 {
+    margin-left: 32px;
+}
+
+.sub {
+    display: none;
+}
+
+.ham {
+    display: block;
+    position: fixed;
+    right: 0;
+    top: 0;
+    margin: 8px 32px;
+    z-index: 1000;
+}
+
+.nav .menu {
+    display: none;
+}
+
+.sub {
+    position: absolute;
+    top: 50%;
+    right: 15%;
+    transform: translate(-15%, -50%);
+}
+
+header .sub img {
+    width: 50px;
+    
+}
+/* header end */
+
+/* sec1 slide start */
+.slide {
+    position: relative;
+    height: 100vh;
+    /* border: 1px solid red; */
+    background-image: url(../img/mobile_sec1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.slide .main_slide {
+    height: 100%;
+    /* border: 1px solid blue; */
+    display: none;
+}
+
+.slide .main_slide .text_slide .text1 {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: black;
+    padding: 0;
+}
+
+.slide .prev,
+.slide .next,
+.slide .slide_count {
+    display: none;
+}
+
+.slide .floating_menu {
+    top: 70%;
+    right: 5%;
+    transform: translate(-5%, -70%);
+    transition: 0.3s;
+}
+
+.slide .floating_menu:hover {
+    background-color: white;
+    border: 1px solid white;
+    color: #74C476;
+    font-weight: bold;
+}
+
+
+.slide .floating_menu.into {
+    border: 1px solid #10222B;
+    background-color: #10222B;
+    color: white;
+}
+
+
+
+
+.slide .mb_text {
+    display: block;
+    
+}
+
+.slide .mb_text .mb1 p:first-child {
+    font-size: 1rem;
+}
+
+.slide .mb_text .mb1 p {
+    line-height: 1.5;
+}
+
+.slide .mb_text .mb2 a {
+    transition: 0.3s;
+}
+
+.slide .mb_text .mb2 a:hover {
+    color: #74C476;
+}
+/* sec1 slide end */
+
+/* sec2 main1 start */
+.main1 .inner {
+    width: 100%;
+    max-width: 100%;
+}
+
+.main1 .pro_con {
+    flex-wrap: wrap;
+    background-color: white;
+}
+
+.main1 .pro_con .con1,
+.main1 .pro_con .con2,
+.main1 .pro_con .con3 {
+    width: 100%;
+    max-width: 100%;
+}
+
+/* .main1 .pro_con>div {
+    border: 1px solid red;
+} */
+
+.main1 .pro_con>div::before {
+    content: "";
+    display: none;
+}
+
+.main1 .pro_con > div {
+    margin-bottom: 1rem;
+    background-color: #95AB63;
+}
+
+.main1 .pro_con .con1>img,
+.main1 .pro_con .con2>img,
+.main1 .pro_con .con3>img {
+    width: 40%;
+}
+
+.main1 .pro_con .con1 .sub_text>p,
+.main1 .pro_con .con2 .sub_text>p,
+.main1 .pro_con .con3 .sub_text>p {
+    position: absolute;
+    display: flex;
+    width: 50%;
+    white-space: nowrap;
+}
+
+.main1 .pro_con .con1 .sub_text>p:nth-of-type(1),
+.main1 .pro_con .con2 .sub_text>p:nth-of-type(1),
+.main1 .pro_con .con3 .sub_text>p:nth-of-type(1),
+.main1 .pro_con .con1 .sub_text>p:nth-of-type(2),
+.main1 .pro_con .con2 .sub_text>p:nth-of-type(2),
+.main1 .pro_con .con3 .sub_text>p:nth-of-type(2) {
+    left: 80%;
+    transform: translateX(-80%);
+}
+
+.main1 .pro_con .con1 .sub_text>p:nth-of-type(3),
+.main1 .pro_con .con2 .sub_text>p:nth-of-type(3),
+.main1 .pro_con .con3 .sub_text>p:nth-of-type(3) {
+    top: 70%;
+    left: 50%;
+    width: 20%;
+    height: 10%;
+    transform: translate(-50%, -70%);
+}
+
+.main1 .pro_con .con1 .sub_text>p:nth-of-type(4),
+.main1 .pro_con .con2 .sub_text>p:nth-of-type(4),
+.main1 .pro_con .con3 .sub_text>p:nth-of-type(4) {
+    top: 70%;
+    left: 80%;
+    width: 20%;
+    height: 10%;
+    transform: translate(-80%, -70%);
+}
+
+/* sec2 main1 end */
+/* sub_slide 부분이지만, 모바일 변경 시 생략됨 */
+.sub_slide {
+    display: none;
+}
+/* sub_slide end */
+
+/* .pr start */
+.pr .inner {
+    width: 100%;
+    max-width: 100%;
+}
+/* .pr end */
+/* brand_story start */
+.brand_story .inner .story_con > div {
+    width: 100%;
+}
+
+.brand_story .inner .story_con > div:nth-of-type(3)~div {
+    display: none;
+}
+
+.brand_story .inner .story_con > div > p:nth-of-type(1)~p {
+    display: none;
+}
+
+.brand_story .inner .bs_more {
+    display: block;
+    bottom: -20px;
+}
+
+.brand_story .inner .story_con.on > div:nth-of-type(3)~div{
+    display: block;
+}
+
+/* brand_story end */
+
+/* pr start */
+.pr .inner video {
+    max-width: 100%;
+}
+
+/* pr end */
+/* review start */
+.review {
+    padding-top: 10%;
+    display: block;
+    width: calc(100% - 64px);
+    margin: auto;
+}
+
+
+/* review end */
+/* footer start */
+footer {
+    text-align: center;
+}
+
+footer .inner {
+    max-width: 100%;
+    width: 100%;
+}
+
+footer .ft_top {
+    width: 100%;
+    background-color: #BBBBBB;
+    color: white;
+}
+
+footer .footer_menu {
+    width: calc(100% - 64px);
+}
+
+footer .footer_menu a {
+    font-size: 12px;
+    white-space: nowrap;
+    padding: 2rem 0;
+}
+
+footer .ft_top p {
+    padding-bottom: 2rem;
+}
+
+footer .inner .ft_start {
+    flex-wrap: wrap;
+    text-align: left;
+    width: calc(100% - 64px);
+    margin: auto;
+}
+
+footer .inner .ft_start p {
+    font-weight: normal;
+    font-size: 12px;
+}
+
+footer .inner .ft_start > * {
+    padding: 10px 0;
+}
+
+footer .ft_start p::after {
+    display: none;
+}
+
+footer .inner .ft_start i {
+    width: 5%;
+}
+
+footer .inner .ft_start p:nth-of-type(1) {
+    width: 29%;
+}
+
+footer .inner .ft_start p:nth-of-type(2) {
+    width: 66%;
+}
+
+footer .inner .ft_start p:nth-of-type(3) {
+    width: 33%;
+}
+
+footer .inner .ft_start p:nth-of-type(4) {
+    width: 67%;
+}
+
+footer .inner .ft_start p:nth-of-type(5) {
+    width: 33%;
+}
+
+footer .inner .ft_start p:nth-of-type(6) {
+    width: 67%;
+}
+
+footer .inner .footer_text {
+    padding-top: 3%;
+    width: calc(100% - 64px);
+    margin: auto;
+    font-size: 0.8rem;
+    text-align: left;
+}
+
+footer .inner .footer_text p {
+    width: 100%;
+    padding: 1rem 0;
+}
+/* footer end */
