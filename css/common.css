@@ -22,7 +22,7 @@
 } */
 
 body {
-    font-family: 'Gowun Dodum', sans-serif;
+    font-family: sans-serif;
     background-color: #eaeaea;
 }
 
@@ -63,7 +63,7 @@ header .sub img {
 }
 
 .menu li a {
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Noto Sans KR';
     padding: 2rem 0;
     /* border: 1px solid red; */
     transition: 0.3s;
@@ -187,7 +187,7 @@ header .sub img {
 }
 
 .slide .main_slide .text_slide>div {
-    font-family: 'Montserrat', sans-serif;
+    font-family: sans-serif;
 }
 
 .slide .main_slide .text_slide>div {
@@ -458,7 +458,7 @@ header .sub img {
 
 .sub_slide .sub_slide_con .sub_text2,
 .sub_slide .sub_slide_con .sub_text2_2 {
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Noto Sans KR';
     font-weight: bold;
     position: absolute;
     top: 50%;
